@@ -6,14 +6,14 @@ import org.springframework.context.annotation.Configuration;
 import riv.clinicalprocess.healthcond.actoutcome.getlaboratoryorderoutcome.v3.rivtabp21.GetLaboratoryOrderOutcomeResponderInterface;
 import riv.clinicalprocess.healthcond.actoutcome.getlaboratoryorderoutcome.v3.rivtabp21.GetLaboratoryOrderOutcomeResponderService;
 
-@Configuration
+@Configuration()
 @EnableConfigurationProperties
 @ConfigurationProperties(prefix = "getaggregatedlaboratoryorderoutcome.v3")
-public class GLOOAgpServiceConfiguration extends se.skltp.aggregatingservices.configuration.AgpServiceConfiguration {
+public class GLOO3AgpServiceConfiguration extends se.skltp.aggregatingservices.configuration.AgpServiceConfiguration {
 
 public static final String SCHEMA_PATH = "/schemas/clinicalprocess-healthcond-actoutcome/interactions/GetLaboratoryOrderOutcomeInteraction/GetLaboratoryOrderOutcomeInteraction_3.1_RIVTABP21.wsdl";
 
-  public GLOOAgpServiceConfiguration() {
+  public GLOO3AgpServiceConfiguration() {
 
     setServiceName("GetAggregatedLaboratoryOrderOutcome-v3");
     setTargetNamespace("urn:riv:clinicalprocess:healthcond:actoutcome:GetLaboratoryOrderOutcome:3:rivtabp21");
@@ -37,7 +37,7 @@ public static final String SCHEMA_PATH = "/schemas/clinicalprocess-healthcond-ac
     setTakContract("urn:riv:clinicalprocess:healthcond:actoutcome:GetLaboratoryOrderOutcomeResponder:3");
 
     // Set service factory
-    setServiceFactoryClass(GLOOAgpServiceFactoryImpl.class.getName());
+    setServiceFactoryClass(GLOO3AgpServiceFactoryImpl.class.getName());
     }
 
 

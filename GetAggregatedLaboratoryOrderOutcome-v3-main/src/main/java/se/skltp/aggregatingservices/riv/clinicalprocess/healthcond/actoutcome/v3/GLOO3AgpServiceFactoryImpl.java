@@ -9,7 +9,7 @@ import riv.clinicalprocess.healthcond.actoutcome.v3.ResultType;
 import se.skltp.aggregatingservices.AgServiceFactoryBase;
 
 @Log4j2
-public class GLOOAgpServiceFactoryImpl extends
+public class GLOO3AgpServiceFactoryImpl extends
     AgServiceFactoryBase<GetLaboratoryOrderOutcomeType, GetLaboratoryOrderOutcomeResponseType> {
 
   @Override
